@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> The Gossip Project </title>
+    </head>
+    <body>
+    <br>
+        <h2> Bienvenue dans ta page de Gossips ! </h2>
+
+        <% @gossips.each_with_index do |gossip,index| %>
+            <p>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body"
+                <h3 class="card-title"><u> Gossip n° <%= index + 1 %></u></h3>
+                <h4 class="card-text"> Titre : <%= gossip.title %><br> by <%= gossip.user.first_name%><br/></h4>
+                <h5>Et voici <a href="/gossips/<%= index+1 %>" class="card-link">le lien</a> vers le potin !</h5>
+              </div>
+            </div>
+            </p>
+          <% end %>
+    </body>
+</html>

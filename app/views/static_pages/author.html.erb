@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> The Gossip Project </title>
+    </head>
+    <body>
+    <br>
+        <h2> Voici la fiche de l'auteur de Gossips<b> <%= @real_author.first_name %> <%= @real_author.last_name %></b> que tu souhaitais afficher ! </h2><br>
+            <p>
+              <h4> Description : <%= @real_author.description %></h3>
+              <h4> Email : <%= @real_author.email %> </h3>
+              <h4> Age : <%= @real_author.age %></h4>
+              <h4> Ville : <%= @real_author.city.name %></h4>
+
+            </p>
+
+
+    </body>
+</html>
